@@ -1,36 +1,111 @@
-\# CS-MAS Capstone Project: Women Safety Agent
+CS-MAS Capstone Project: Women Safety Multi-Agent System
+🚀 Project Overview
 
+Women safety is a growing concern, especially in emergency situations where fast communication and decision-making are critical.
+This project introduces a Women Safety Multi-Agent System using:
 
+LLM-powered agents
 
-\## Project Overview
+Sequential \& Parallel agent execution
 
-This project is a Capstone Multi-Agent System (CS-MAS) for women safety. 
+Tools, Memory, and State Management
 
-It uses multiple agents including an LLM agent and a memory system to classify incidents, 
+Autonomous decision logic
 
-store context, and notify authorities in case of high severity situations.
+Safety alerts and location tracking
 
+The system can process user messages, detect emergency intent, analyze location, and trigger safety workflows automatically.
 
+🔥 Key Features (As Required by Capstone Guidelines)
+✔️ 1. Multi-Agent System
 
-\## Features
+Emergency Detection Agent
 
-\- Multi-agent system:
+Location Analyzer Agent
 
-&nbsp; - LLM agent analyzes safety messages
+Action Planner Agent
 
-&nbsp; - MemoryBank stores long-term incident history
+Notification Agent
 
-\- Triage system detects incident severity
+✔️ 2. Tool Usage
 
-\- Notification system for high severity incidents
+Custom Python tools for:
 
-\- Session tracking \& context-aware responses
+Location fetching
 
+Emergency contact list
 
+Alert creation
 
-\## Installation
+✔️ 3. Memory \& State
 
-1\. Clone the repo:
+Short-term session memory
 
+Long-term memory (Memory Bank Concept)
 
+✔️ 4. Context Engineering
+
+Filters irrelevant details
+
+Compresses conversation history
+
+Extracts emergency cues
+
+✔️ 5. Logging \& Tracing
+
+Tracks each agent’s reasoning
+
+Debug-friendly logs
+
+📁 Project Structure
+cs-mas/
+│── app/
+│   ├── main.py
+│   ├── agents/
+│   ├── tools/
+│   ├── models/
+│   └── utils/
+│── .env
+│── README.md
+│── venv/
+│── .gitattributes
+
+⚙️ How It Works
+
+User sends a message like:
+“I feel unsafe, someone is following me.”
+
+Emergency Detection Agent checks tone, intent, danger level.
+
+Location Analyzer Agent fetches nearest safe zones.
+
+Action Planner Agent prepares steps:
+
+Call emergency contact
+
+Share location
+
+Activate loud alert
+
+Notification Agent sends final structured alert.
+
+▶️ Run the Project Locally
+python -m venv venv
+venv\\Scripts\\activate
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+
+🎯 Use Case
+
+This agent reduces emergency-response time,
+helps women respond smartly,
+and enables autonomous decision-making powered by LLM agents.
+
+📝 Team Details
+
+Hemant Shahi – B.Tech (CSE-AI), Motihari College of Engineering
+
+Semester: 7th
+
+Role: LLM-based multi-agent system developer, Data analyst
 
